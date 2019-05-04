@@ -32,6 +32,38 @@ article:first-child div{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+article div a.tlacitko{
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+article div:last-child a.tlacitko{
+    text-decoration: underline rgba(0,0,0,.65);
+}
+
+article div:nth-child(2) a.tlacitko{
+    text-decoration: underline white;
+}
+
+article div:hover a.tlacitko{
+    text-decoration: underline red;
+}
+
+article:first-child div{
+    width: 30%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-transform: uppercase;
     font-family: Helvetica, sans-serif;
     font-weight: 800;
@@ -40,8 +72,10 @@ article:first-child div{
 
 article:first-child div:last-child{
     color: #fff;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.65);
 }
 
-article div{
+article div p{
+    text-indent: 1rem;
+    margin: 6rem;
 }

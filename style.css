@@ -22,6 +22,7 @@ article:first-child div:first-child{
     justify-content: center;
     align-items: center;
     align-content: center;
+    flex-wrap: wrap;
     font-size: 1rem;
     font-weight: 100;
     text-transform: none;

@@ -1,15 +1,11 @@
 (function($) {
 
-    $('a.tlacitko').click(function(e) {
-        let cil = $(this).attr('href');
-        let menu = $('#menu');
-        let rychlost = 1000;
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
 
-        $("html, body").stop().animate(
-            { scrollTop: $(cil).offset().top - menu.height() },
-            rychlost);
-
-        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 1000);
     });
 
 

@@ -107,6 +107,15 @@ form{
     flex-direction: column;
 }
 
+form p:nth-child(2){
+    margin: 0;
+}
+
+form p:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+
 input, textarea{
     font-family: Helvetica, sans-serif;
     font-size: 1rem;
@@ -117,9 +126,12 @@ input, textarea{
 }
 
 input[name="name"]{
-    margin: 0 0 1rem 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-input[name="email"]{
-    margin: 1rem 0 0 0;
+input[type="submit"]{
+    background-color: #fff;
+    color: #333;
 }

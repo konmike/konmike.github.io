@@ -13,6 +13,13 @@ article:first-child{
     flex-wrap: wrap;
 }
 
+article:last-child{
+    background-color: rgba(0,0,0,.65);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
 article:first-child div:first-child{
     width: 70%;
     height: 100vh;

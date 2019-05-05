@@ -14,80 +14,9 @@ article{
     height: 100vh;
 }
 
+/* Home */
 article:first-child{
     flex-wrap: wrap;
-}
-
-
-/* My projects */
-article#myprojects{
-    justify-content: space-between;
-}
-
-section{
-    display: flex;
-    justify-content: center;
-}
-
-section p{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: .5rem;
-    font-family: Helvetica, sans-serif;
-    width: 208px;
-    border: 1px solid #dfe1e5;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-}
-
-section p:hover{
-    width: 206px;
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-    border-color: rgba(223, 225, 229, 0);
-}
-
-section p span{
-    margin: .2rem;
-}
-
-section p a{
-    text-decoration: none;
-    display: block;
-    height: 100px;
-    width: 208px;
-    margin-bottom: .5rem;
-}
-
-
-section p a img{
-    height: 100px;
-    width: 210px;
-}
-
-article#myprojects footer{
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-    padding: 1rem;
-    border-top: 1px solid black;
-}
-
-article#myprojects footer a{
-    color: #000;
-    font-family: Calibri, sans-serif;
-}
-
-
-/* END My projects */
-
-article:last-child{
-    background-color: rgb(47,47,47);
-    color: white;
-    justify-content: center;
-    align-items: center;
 }
 
 article:first-child div:first-child{
@@ -166,6 +95,88 @@ article div p:first-child{
     margin-bottom: 1rem;
 }
 
+/* END Home */
+
+
+/* My projects */
+article#myprojects{
+    justify-content: space-between;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+section p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .5rem;
+    font-family: Helvetica, sans-serif;
+    width: 208px;
+    border: 1px solid #dfe1e5;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+section p:hover{
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+section p span{
+    margin: .2rem;
+}
+
+section p a{
+    text-decoration: none;
+    display: block;
+    height: 100px;
+    width: 208px;
+    margin-bottom: .5rem;
+}
+
+section p a img{
+    height: 100px;
+    width: 210px;
+}
+
+article#myprojects footer{
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid black;
+}
+
+article#myprojects footer a{
+    color: #000;
+    font-family: Calibri, sans-serif;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+article#myprojects footer a:hover{
+    text-decoration: underline red;
+}
+
+/* END My projects */
+
+
+/* Contact */
+article:last-child{
+    background-color: rgb(47,47,47);
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -199,3 +210,5 @@ input[type="submit"]{
     background-color: #fff;
     color: #333;
 }
+
+/* END Contact */

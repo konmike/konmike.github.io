@@ -18,7 +18,7 @@ article:first-child{
 }
 
 article:last-child{
-    background-color: rgba(0,0,0,.65);
+    background-color: rgb(47,47,47);
     color: white;
     display: flex;
     justify-content: center;
@@ -62,7 +62,7 @@ article div a.tlacitko{
 }
 
 article div:last-child a.tlacitko{
-    text-decoration: underline rgb(88,88,88);
+    text-decoration: underline rgb(47,47,47);
     color: #fff;
 }
 
@@ -89,7 +89,7 @@ article:first-child div{
 
 article:first-child div:last-child{
     color: #fff;
-    background-color: rgba(0,0,0,.65);
+    background-color: rgb(47,47,47);
 }
 
 article div p{

@@ -153,19 +153,12 @@ article#myprojects footer{
     border-top: 1px solid black;
 }
 
-article#myprojects footer a{
-    color: #000;
-    font-family: Calibri, sans-serif;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
+article#myprojects footer img{
+    width: 40px;
+    height: 40px;
 }
 
-article#myprojects footer a:hover{
-    text-decoration: underline red;
-}
+
 
 /* END My projects */
 
@@ -210,6 +203,11 @@ input[name="name"]{
 input[type="submit"]{
     background-color: #fff;
     color: #333;
+}
+
+article footer img{
+    width: 40px;
+    height: 40px;
 }
 
 /* END Contact */

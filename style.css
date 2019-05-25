@@ -150,7 +150,10 @@ article#myprojects footer{
     font-family: Helvetica, sans-serif;
     text-align: center;
     padding: 1rem;
-    border-top: 1px solid black;
+}
+
+article#myprojects footer a{
+    text-decoration: none;
 }
 
 article#myprojects footer img{
@@ -167,7 +170,7 @@ article#myprojects footer img{
 article:last-child{
     background-color: rgb(47,47,47);
     color: white;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -203,6 +206,10 @@ input[name="name"]{
 input[type="submit"]{
     background-color: #fff;
     color: #333;
+}
+
+article footer a{
+    text-decoration: none;
 }
 
 article footer img{

@@ -3,23 +3,34 @@ body{
     margin: 0;
 }
 
-h1{
-    text-align: center;
-    font-family: Helvetica, sans-serif;
-}
-
-article{
+.article{
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
-/* Home */
-article:first-child{
+.article--home{
     flex-wrap: wrap;
 }
 
-article:first-child div:first-child{
+.article--projects{
+    justify-content: space-between;
+}
+
+.article--contact{
+    background-color: rgb(47,47,47);
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.article__title{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+
+.article__about-me{
     width: 70%;
     height: 100vh;
     background-color: #000;
@@ -34,64 +45,55 @@ article:first-child div:first-child{
     text-transform: none;
 }
 
-article:first-child div{
+.article__wrap-link{
     width: 30%;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
 }
 
-article div a.tlacitko{
+.article__wrap-link--contact{
+    color: #fff;
+    background-color: rgb(47,47,47);
+}
+
+.tlacitko{
     text-transform: uppercase;
     font-family: Helvetica, sans-serif;
     font-weight: 800;
     font-size: 1.5rem;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
-    -ms-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
 }
 
-article div:last-child a.tlacitko{
+.article__wrap-link--contact .tlacitko{
     text-decoration: underline rgb(47,47,47);
     color: #fff;
 }
 
-article div:nth-child(2) a.tlacitko{
+.article__wrap-link--projects .tlacitko{
     text-decoration: underline white;
     color: #000;
 }
 
-article div:hover a.tlacitko{
+.article div:hover .tlacitko{
     text-decoration: underline red;
 }
 
-article:first-child div{
-    width: 30%;
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-family: Helvetica, sans-serif;
-    font-weight: 800;
-    font-size: 1.5rem;
-}
-
-article:first-child div:last-child{
-    color: #fff;
-    background-color: rgb(47,47,47);
-}
-
-article div p{
+.article__par{
     text-indent: 1rem;
     margin: 0 10rem;
     line-height: 1.5rem;
 }
 
-article div p:first-child{
+.article__par:first-child{
     margin-bottom: 1rem;
 }
 
@@ -99,9 +101,6 @@ article div p:first-child{
 
 
 /* My projects */
-article#myprojects{
-    justify-content: space-between;
-}
 
 section{
     display: flex;
@@ -118,7 +117,6 @@ section p{
     border: 1px solid #dfe1e5;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
-    -ms-transition: all .5s;
     -o-transition: all .5s;
     transition: all .5s;
 }
@@ -146,33 +144,24 @@ section p a img{
     width: 100%;
 }
 
-article#myprojects footer{
+.article__footer{
     font-family: Helvetica, sans-serif;
     text-align: center;
     padding: 1rem;
 }
 
-article#myprojects footer a{
+.article__footer--link{
     text-decoration: none;
 }
 
-article#myprojects footer img{
+.article__footer--img{
     width: 40px;
     height: 40px;
 }
-
-
-
 /* END My projects */
 
 
 /* Contact */
-article:last-child{
-    background-color: rgb(47,47,47);
-    color: white;
-    justify-content: space-around;
-    align-items: center;
-}
 
 form{
     display: flex;
@@ -206,15 +195,6 @@ input[name="name"]{
 input[type="submit"]{
     background-color: #fff;
     color: #333;
-}
-
-article footer a{
-    text-decoration: none;
-}
-
-article footer img{
-    width: 40px;
-    height: 40px;
 }
 
 /* END Contact */

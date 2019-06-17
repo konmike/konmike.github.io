@@ -9,32 +9,32 @@
 </head>
 <body>
     <main>
-        <article>
-            <div>
-                <p>Jmenuji se Michal Konečný a jsem studentem ČVUT na
+        <article class="article article--home">
+            <div class="article__about-me">
+                <p class="article__par">Jmenuji se Michal Konečný a jsem studentem ČVUT na
                    Fakultě informačních technologií. Z oboru informatiky mě nejvíce
                    baví tworba webu a webových aplikací.
                    Během studia mě kromě webu samotného, zaujala také oblast databází.
                 </p>
-                <p>
+                <p class="article__par">
                    Rád pracuji s redakčním systémem Wordpress. Nejčastěji využívám
                    programovací jazyk PHP, samozřejmostí pak je HTML5 a CSS3,
                    popřípadě preprocesor LESS.
                 </p>
-                <p>
+                <p class="article__par">
                    Zkušenosti mám však také s programovacími jazyky C, C++ nebo Python.
                    Při své práci používám verzovací systém Git.
                 </p>
             </div>
-            <div>
+            <div class="article__wrap-link article__wrap-link--projects">
                 <a href="#myprojects" class="tlacitko">Mé projekty</a>
             </div>
-            <div>
+            <div class="article__wrap-link article__wrap-link--contact">
                 <a href="#contact" class="tlacitko">Kontaktujte mě</a>
             </div>
         </article>
-        <article id="myprojects">
-            <h1>Mé projekty</h1>
+        <article id="myprojects" class="article article--projects">
+            <h1 class="article__title">Mé projekty</h1>
             <section>
                 <p>
                     <a href="http://srdcechvaly.cekuj.net">
@@ -63,20 +63,20 @@
                     </span>
                 </p>
             </section>
-            <footer>
+            <footer class="article__footer">
                 <span>
-                    <a href="https://github.com/konmike/">
-                        <img src="img/github.svg" alt="Github"/>
+                    <a href="https://github.com/konmike/" class="article__footer--link">
+                        <img src="img/github.svg" alt="Github" class="article__footer--img"/>
                     </a>
-                    <a href="https://www.linkedin.com/in/michal-konecny/">
-                        <img src="img/linkedin.svg" alt="Linkedin"/>
+                    <a href="https://www.linkedin.com/in/michal-konecny/" class="article__footer--link">
+                        <img src="img/linkedin.svg" alt="Linkedin" class="article__footer--img"/>
                     </a>
                 </span>
             </footer>
 
         </article>
-        <article id="contact">
-            <h1>Kontaktní formulář</h1>
+        <article id="contact" class="article article--contact">
+            <h1 class="article__title">Kontaktní formulář</h1>
             <form action="https://formspree.io/konecny1211@seznam.cz" method="POST">
                 <p>
                     <input type="text" name="name" placeholder="Jméno">
@@ -93,13 +93,13 @@
                 </p>
             </form>
 
-            <footer>
+            <footer class="article__footer">
                 <span>
-                    <a href="https://github.com/konmike/">
-                        <img src="img/github.svg" alt="Github"/>
+                    <a href="https://github.com/konmike/" class="article__footer--link">
+                        <img src="img/github.svg" alt="Github" class="article__footer--img"/>
                     </a>
-                    <a href="https://www.linkedin.com/in/michal-konecny/">
-                        <img src="img/linkedin.svg" alt="Linkedin"/>
+                    <a href="https://www.linkedin.com/in/michal-konecny/" class="article__footer--link">
+                        <img src="img/linkedin.svg" alt="Linkedin" class="article__footer--img"/>
                     </a>
                 </span>
             </footer>

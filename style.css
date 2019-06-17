@@ -98,8 +98,6 @@ body{
     margin-bottom: 1rem;
 }
 
-/* END Home */
-
 
 /* My projects */
 
@@ -162,23 +160,21 @@ section p a img{
 /* END My projects */
 
 
-/* Contact */
-
-form{
+.form{
     display: flex;
     flex-direction: column;
 }
 
-form p:nth-child(2){
+.form__wrap-par:nth-child(2){
     margin: 0;
 }
 
-form p:last-child{
+.form__wrap-par:last-child{
     display: flex;
     justify-content: space-between;
 }
 
-input, textarea{
+.form__boxes{
     font-family: Helvetica, sans-serif;
     font-size: 1rem;
     border: 0;
@@ -187,15 +183,13 @@ input, textarea{
     color: #fff;
 }
 
-input[name="name"]{
+.form__box--name{
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
 }
 
-input[type="submit"]{
+.form__box--submit{
     background-color: #fff;
     color: #333;
 }
-
-/* END Contact */

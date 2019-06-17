@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <title>Michal Konečný</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="sss.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="script.js"></script>
-    <script src="sss.js"></script>
-    <script>jQuery(function($) {$('.slider').sss();});</script>
+    <link type="text/css" rel="stylesheet" href="lightslider.css" />
+    <script src="lightslider.js"></script>
 </head>
 <body>
     <main>
@@ -38,13 +37,18 @@
         </article>
         <article id="myprojects" class="article article--projects">
             <h1 class="article__title">Mé projekty</h1>
-            <div class="slider">
-                <img src="images/evidencezamestnancu.png" />
-                <img src="images/srdcechvaly.png" />
-                <div class="just_text">This one's just text.</div>
-                <img src="images/zonglersro.png" />
-                <span class="caption">This one has a caption</span>
-            </div>
+
+            <ul id="lightSlider">
+                <li>
+                    <img src="img/srdcechvaly.png" alt="Projekt Srdce chvály"/>
+                    <span>Webová stránka postavená na redakčním systému Wordpress.</span>
+                </li>
+                <li>
+                    <h3>Second Slide</h3>
+                    <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+                </li>
+            </ul>
+
 
 
             <!--
@@ -123,5 +127,12 @@
             </footer>
         </article>
     </main>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightSlider").lightSlider();
+        });
+    </script>
+
 </body>
 </html>

@@ -62,7 +62,7 @@ body{
     background-color: rgb(47,47,47);
 }
 
-.tlacitko{
+.article__link{
     text-transform: uppercase;
     font-family: Helvetica, sans-serif;
     font-weight: 800;
@@ -73,17 +73,17 @@ body{
     transition: all .5s;
 }
 
-.article__wrap-link--contact .tlacitko{
+.article__link--contact{
     text-decoration: underline rgb(47,47,47);
     color: #fff;
 }
 
-.article__wrap-link--projects .tlacitko{
+.article__link--projects{
     text-decoration: underline white;
     color: #000;
 }
 
-.article div:hover .tlacitko{
+.article__wrap-link:hover .article__link{
     text-decoration: underline red;
 }
 

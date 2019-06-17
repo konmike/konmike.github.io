@@ -91,6 +91,7 @@ body{
     text-indent: 1rem;
     margin: 0 10rem;
     line-height: 1.5rem;
+    font-family: Helvetica,sans-serif;
 }
 
 .article__par:first-child{

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Michal Konečný</title>
+    <link type="text/css" rel="stylesheet" href="lightslider.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="script.js"></script>
-    <link type="text/css" rel="stylesheet" href="lightslider.css" />
     <script src="lightslider.js"></script>
 </head>
 <body>
@@ -38,53 +38,34 @@
         <article id="myprojects" class="article article--projects">
             <h1 class="article__title">Mé projekty</h1>
 
-            <ul id="lightSlider">
-                <li>
-                    <img src="img/srdcechvaly.png" alt="Projekt Srdce chvály"/>
-                    <span>Webová stránka postavená na redakčním systému Wordpress.</span>
-                </li>
-                <li>
-                    <h3>Second Slide</h3>
-                    <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
-                </li>
-            </ul>
-
-
-
-            <!--
-            <div class="slider">
-                <div class="sss">
-                    <div class="ssslide">
+            <section>
+                <p>
+                    <a href="http://srdcechvaly.cekuj.net">
                         <img src="img/srdcechvaly.png" alt="Projekt Srdce chvály"/>
-                        <div class="title">
-                            <a href="http://srdcechvaly.cekuj.net">
-                                <span>Webová stránka postavená na redakčním systému Wordpress.</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="ssslide">
+                    </a>
+                    <span>
+                        Webová stránka postavená na redakčním systému Wordpress.
+                    </span>
+                </p>
+                <p>
+                    <a href="https://github.com/konmike/BI-TWA">
                         <img src="img/evidencezamestnancu.png" alt="Evidence zaměstnanců"/>
-                        <div class="title">
-                            <a href="https://github.com/konmike/BI-TWA">
-                                <span>Školní projekt postavený na frameworku Symfony - Evidence zaměstnanců.(Pouze zdrojové kódy)</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="ssslide">
+                    </a>
+                    <span>
+                        Školní projekt postavený na frameworku Symfony - Evidence zaměstnanců.
+                        (Pouze zdrojové kódy)
+                    </span>
+                </p>
+                <p>
+                    <a href="https://github.com/konmike/BI-ZWU">
                         <img src="img/zonglersro.png" alt="Prezentace výrobku"/>
-                        <div class="title">
-                            <a href="https://github.com/konmike/BI-ZWU">
-                                <span>Semestrální práce jejímž cílem bylo vytvořit webovou prezentaci
-                                nějakého výrobku a případně e-shop.</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="sssprev"></div>
-                <div class="sssnext"></div>
-            </div>-->
+                    </a>
+                    <span>
+                        Semestrální práce jejímž cílem bylo vytvořit webovou prezentaci
+                        nějakého výrobku a případně e-shop.
+                    </span>
+                </p>
+            </section>
             <footer class="article__footer">
                 <span>
                     <a href="https://github.com/konmike/" class="article__footer--link">
@@ -95,7 +76,6 @@
                     </a>
                 </span>
             </footer>
-
         </article>
         <article id="contact" class="article article--contact">
             <h1 class="article__title">Kontaktní formulář</h1>
@@ -130,7 +110,10 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-            $("#lightSlider").lightSlider();
+            $("#lightSlider").lightSlider({
+                item: 1,
+                loop: true,
+            });
         });
     </script>
 

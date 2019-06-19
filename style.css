@@ -14,7 +14,7 @@ body{
 }
 
 .article--projects{
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .article--contact{
@@ -98,64 +98,6 @@ body{
     margin-bottom: 1rem;
 }
 
-
-/* My projects */
-.slider__item a img{
-    width: 100%;
-    max-width: 100%;
-    height: 50%;
-}
-
-section{
-    display: flex;
-    justify-content: center;
-}
-
-section p{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: .5rem;
-    font-family: Helvetica, sans-serif;
-    width: 500px;
-    border: 1px solid #dfe1e5;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-}
-
-.slider__item{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1rem 1rem;
-    border: 15px solid #FFF;
-    box-shadow: 1px 1px 5px #CCC;
-}
-
-section p:hover{
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-    border-color: rgba(223, 225, 229, 0);
-}
-
-section p span{
-	margin: .2rem .2rem 1rem .2rem;
-	text-align: center;
-}
-
-section p a{
-    text-decoration: none;
-    display: block;
-    height: auto;
-    width: 100%;
-    margin-bottom: .5rem;
-}
-
-section p a img{
-    height: auto;
-    width: 100%;
-}
-
 .article__footer{
     font-family: Helvetica, sans-serif;
     text-align: center;
@@ -170,8 +112,43 @@ section p a img{
     width: 40px;
     height: 40px;
 }
-/* END My projects */
 
+.lslide, .clone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .5rem !important;
+    font-family: Helvetica, sans-serif;
+    width: 500px !important;
+    border: 1px solid #dfe1e5;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.active, .lslide:hover, .clone:hover{
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.slider__link{
+    text-decoration: none;
+    display: block;
+    height: auto;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.slider__img{
+    height: auto;
+    width: 100%;
+}
+
+.slider__title{
+    margin: .2rem .2rem 1rem .2rem;
+    text-align: center;
+}
 
 .form{
     display: flex;

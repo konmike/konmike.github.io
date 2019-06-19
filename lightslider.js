@@ -130,7 +130,8 @@
 
         refresh.calSW = function () {
             if (settings.autoWidth === false) {
-                slideWidth = (elSize - ((settings.item * (settings.slideMargin)) - settings.slideMargin)) / settings.item;
+                //slideWidth = (elSize - ((settings.item * (settings.slideMargin)) - settings.slideMargin)) / settings.item; MY_WORK
+                slideWidth = 500;
             }
         };
 
@@ -295,7 +296,8 @@
                     }
                     $children.css(gutter, settings.slideMargin + 'px');
                     w = refresh.calWidth(false);
-                    $el.css(property, w + 'px');
+                    //$el.css(property, w + 'px'); MY_WORK
+                    $el.css(property, (w+100) + 'px');
                     if (settings.loop === true && settings.mode === 'slide') {
                         if (on === false) {
                             scene = $el.find('.clone.left').length;
@@ -378,7 +380,7 @@
                         }
                     }
                     var $cSouter = $slide.parent();
-                    $cSouter.find('.lSPager').html(pagers); 
+                    $cSouter.find('.lSPager').html(pagers);
                     if (settings.gallery === true) {
                         if (settings.vertical === true) {
                             // set Gallery thumbnail width
@@ -441,7 +443,8 @@
                         tP = ((tHT) * 100) / elSize;
                     }
                     ob.css({
-                        'height': tH + 'px',
+                        //'height': tH + 'px', MY_WORK
+                        'height': 350 + 'px',
                         'padding-bottom': tP + '%'
                     });
                 };
@@ -451,7 +454,7 @@
                         setCss();
                         if (!interval) {
                             $this.auto();
-                        }   
+                        }
                     }else{
                         obj.find('img').on('load', function () {
                             setTimeout(function () {
@@ -612,14 +615,14 @@
             slideThumb: function () {
                 var position;
                 switch (settings.currentPagerPosition) {
-                case 'left':
-                    position = 0;
-                    break;
-                case 'middle':
-                    position = (elSize / 2) - (thumbWidth / 2);
-                    break;
-                case 'right':
-                    position = elSize - thumbWidth;
+                    case 'left':
+                        position = 0;
+                        break;
+                    case 'middle':
+                        position = (elSize / 2) - (thumbWidth / 2);
+                        break;
+                    case 'right':
+                        position = elSize - thumbWidth;
                 }
                 var sc = scene - $el.find('.clone.left').length;
                 var $pager = $slide.parent().find('.lSPager');
@@ -877,7 +880,7 @@
                 $(window).on('focus', function(){
                     $this.auto();
                 });
-                
+
                 $(window).on('blur', function(){
                     clearInterval(interval);
                 });
@@ -1080,7 +1083,7 @@
                 }
             }
             return sc + 1;
-        }; 
+        };
         $el.getTotalSlideCount = function () {
             return $slide.find('.lslide').length;
         };
@@ -1105,7 +1108,7 @@
                 $el.refresh = function(){};
                 $el.getCurrentSlideCount = function(){};
                 $el.getTotalSlideCount = function(){};
-                $el.goToSlide = function(){}; 
+                $el.goToSlide = function(){};
                 $el.lightSlider = null;
                 refresh = {
                     init : function(){}

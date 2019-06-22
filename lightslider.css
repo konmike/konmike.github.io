@@ -19,6 +19,10 @@
 .lightSlider {
     overflow: hidden;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .lSSlideWrapper {
     max-width: 100%;
@@ -152,27 +156,30 @@
 .lSAction > a {
     width: 32px;
     display: block;
-    top: 50%;
-    height: 32px;
-    background-image: url('img/controls.png');
+    top: 0;
+    height: 350px;
+    background-color: rgba(0,0,0,1);
+    background-position: center;
+    background-repeat: no-repeat;
     cursor: pointer;
     position: absolute;
     z-index: 99;
-    margin-top: -16px;
-    opacity: 0.5;
     -webkit-transition: opacity 0.35s linear 0s;
     transition: opacity 0.35s linear 0s;
 }
-.lSAction > a:hover {
-    opacity: 1;
+.lSAction > .lSPrev:hover {
+    background-image: url(img/controls_left.png);
 }
 .lSAction > .lSPrev {
-    background-position: 0 0;
-    left: 10px;
+    background-image: url(img/controls_left_op.png);
+    left: 0;
+}
+.lSAction > .lSNext:hover {
+    background-image: url(img/controls_right.png);
 }
 .lSAction > .lSNext {
-    background-position: -32px 0;
-    right: 10px;
+    background-image: url(img/controls_right_op.png);
+    right: 0;
 }
 .lSAction > a.disabled {
     pointer-events: none;

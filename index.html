@@ -5,18 +5,23 @@
     <title>Michal Konečný</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="lightslider.css">
+    <script src="https://kit.fontawesome.com/bb1b7b66b0.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="lightslider.js"></script>
 </head>
 <body>
     <main>
-        <article class="article article--home">
+        <article id="home" class="article article--home">
             <div class="article__about-me">
                 <p class="article__par">Jmenuji se Michal Konečný a jsem studentem ČVUT na
                    Fakultě informačních technologií. Z oboru informatiky mě nejvíce
                    baví tworba webových prezentací a aplikací.
                    Během studia mě kromě webu samotného, zaujala také oblast databází.
+                </p>
+                <p class="article__par">Ve svém volném čase se rád věnuji střihu videa,
+                    tvorbě titulků k videoklipům či filmům, četbě knih, rybaření a různým
+                    sportům.
                 </p>
                 <p class="article__par">
                    Rád pracuji s redakčním systémem Wordpress. Nejčastěji využívám
@@ -26,6 +31,14 @@
                 <p class="article__par">
                    Zkušenosti mám však také s programovacími jazyky C, C++ nebo Python.
                    Při své práci používám verzovací systém Git.
+                   <p class="article__footer">
+                        <a href="https://github.com/konmike/" class="article__par--link">
+                            <img src="img/github_w.png" alt="Github" class="article__par--img"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/michal-konecny/" class="article__par--link">
+                            <img src="img/linkedin_w.png" alt="Linkedin" class="article__par--img"/>
+                        </a>
+                   </p>
                 </p>
             </div>
             <div class="article__wrap-link article__wrap-link--projects">
@@ -39,39 +52,45 @@
 
             <ul id="responsive">
                 <li>
+                    <img src="img/srdcechvaly.png" alt="Projekt Srdce chvály" class="slider__img">
 
-                    <a href="http://srdcechvaly.cekuj.net" class="slider__link">
-                        <img src="img/srdcechvaly.png" alt="Projekt Srdce chvály" class="slider__img">
-                    </a>
                     <span class="slider__title">
                         Webová stránka postavená na redakčním systému Wordpress.
                     </span>
-
+                    <span class="slider__footer">
+                        <a href="https://github.com/konmike/srdcechvaly" class="slider__link">Zdrojové kódy</a>
+                        <a href="http://srdcechvaly.cekuj.net" class="slider__link">Projekt</a>
+                    </span>
                 </li>
                 <li>
 
-                    <a href="https://github.com/konmike/BI-TWA" class="slider__link">
-                        <img src="img/evidencezamestnancu.png" alt="Evidence zaměstnanců" class="slider__img">
-                    </a>
+                    <img src="img/evidencezamestnancu.png" alt="Evidence zaměstnanců" class="slider__img">
+
                     <span class="slider__title">
                         Školní projekt postavený na frameworku Symfony - Evidence zaměstnanců.
                         (Pouze zdrojové kódy)
                     </span>
-
+                    <span class="slider__footer">
+                        <a href="https://github.com/konmike/BI-TWA" class="slider__link">Zdrojové kódy</a>
+                        <a href="#" class="slider__link">Projekt</a>
+                    </span>
                 </li>
                 <li>
 
-                    <a href="https://github.com/konmike/BI-ZWU" class="slider__link">
-                        <img src="img/zonglersro.png" alt="Prezentace výrobku" class="slider__img">
-                    </a>
+                    <img src="img/zonglersro.png" alt="Prezentace výrobku" class="slider__img">
+
                     <span class="slider__title">
                         Semestrální práce jejímž cílem bylo vytvořit webovou prezentaci
                         nějakého výrobku a případně e-shop.
                     </span>
 
+                    <span class="slider__footer">
+                        <a href="https://github.com/konmike/BI-ZWU" class="slider__link">Zdrojové kódy</a>
+                        <a href="#" class="slider__link">Projekt</a>
+                    </span>
                 </li>
             </ul>
-
+            <a href="#home" id="up" class="scroll--button"></a>
         </article>
         <article id="contact" class="article article--contact">
             <h1 class="article__title">Kontaktní formulář</h1>
@@ -91,6 +110,7 @@
                 </p>
             </form>
 
+            <!--
             <footer class="article__footer">
                 <span>
                     <a href="https://github.com/konmike/" class="article__footer--link">
@@ -101,6 +121,7 @@
                     </a>
                 </span>
             </footer>
+            -->
         </article>
     </main>
 

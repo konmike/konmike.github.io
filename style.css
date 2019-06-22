@@ -150,6 +150,11 @@ body{
     color: rgba(0,0,0,1);
 }
 
+.slider__link--no-address{
+    cursor: text;
+    color: rgba(0,0,0,1);
+}
+
 .slider__img{
     margin-bottom: .5rem;
     height: auto;

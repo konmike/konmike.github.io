@@ -202,20 +202,30 @@ body{
     color: #333;
 }
 
-.scroll--button{
+.scroll-button{
     position: fixed;
     display: none;
     bottom: 0;
     right: 0;
     margin: 2rem;
+}
+.scroll-button__down,.scroll-button__up{
     font-size: 3rem;
     text-decoration: none;
 }
 
-.scroll--button:after{
+.scroll-button__up:after{
     font-family: "Font Awesome 5 Free", serif;
     font-weight: 900;
     color: black;
-    padding: 0.5rem;
+    padding: 0;
     content: "\f139";
+}
+
+.scroll-button__down:after{
+    font-family: "Font Awesome 5 Free", serif;
+    font-weight: 900;
+    color: black;
+    padding: 0;
+    content: "\f13a";
 }

@@ -19,8 +19,8 @@ body{
 
 .article--contact{
     background-color: rgb(47,47,47);
-    color: white;
-    justify-content: center;
+    color: #fff;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -67,10 +67,10 @@ body{
     font-family: Helvetica, sans-serif;
     font-weight: 800;
     font-size: 1.5rem;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .article__link--contact{
@@ -79,12 +79,12 @@ body{
 }
 
 .article__link--projects{
-    text-decoration: underline white;
+    text-decoration: underline #fff;
     color: #000;
 }
 
 .article__wrap-link:hover .article__link{
-    text-decoration: underline red;
+    text-decoration: underline #f00;
 }
 
 .article__par{
@@ -98,18 +98,13 @@ body{
     margin-bottom: 1rem;
 }
 
-/*.article__footer{
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-    padding: 1rem;
-}*/
 .article__footer{
     margin-top: 2rem;
 }
 
 .article__footer--link,.article__par--link{
     text-decoration: none;
-    margin: 0 .3rem;
+    margin: 0 0.3rem;
 }
 
 .article__footer--img, .article__par--img{
@@ -125,10 +120,10 @@ body{
     font-family: Helvetica, sans-serif;
     width: 500px !important;
     border: 1px solid #dfe1e5;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .active, .lslide:hover, .clone:hover{
@@ -143,7 +138,7 @@ body{
     font-weight: bold;
     color: rgba(0,0,0,0.7);
     margin: 0.3rem;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .slider__link:hover{
@@ -156,13 +151,13 @@ body{
 }
 
 .slider__img{
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     height: auto;
     width: 100%;
 }
 
 .slider__title{
-    margin: .2rem .2rem 1rem .2rem;
+    margin: 0.2rem 0.2rem 1rem 0.2rem;
     text-align: center;
 }
 
@@ -192,7 +187,7 @@ body{
     font-size: 1rem;
     border: 0;
     padding: 0.5rem;
-    background-color: black;
+    background-color: #000;
     color: #fff;
 }
 
@@ -222,7 +217,7 @@ body{
 .scroll-button__up:after{
     font-family: "Font Awesome 5 Free", serif;
     font-weight: 900;
-    color: black;
+    color: #000;
     padding: 0;
     content: "\f139";
 }
@@ -230,7 +225,22 @@ body{
 .scroll-button__down:after{
     font-family: "Font Awesome 5 Free", serif;
     font-weight: 900;
-    color: black;
+    color: #000;
     padding: 0;
     content: "\f13a";
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Helvetica,sans-serif;
+    margin-bottom: 1rem;
+}
+.footer__link{
+    color: #fff;
+    transition: all 0.5s;
+}
+.footer__link:hover{
+    text-decoration-color: #f00;
 }
